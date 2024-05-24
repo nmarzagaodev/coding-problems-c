@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 SRC = main.c lib/randomarray_int.c
 OBJ = $(SRC:.c=.o)
-TARGET = linear-seach-exemple
+TARGET = linear-seach.out
 
 .PHONY: all clean
 

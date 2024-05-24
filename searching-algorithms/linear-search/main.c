@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "./lib/randomarray_int.h"
 
-
-bool linearSearch(RandomArray_Int* ra, int target) {
-    for (size_t index = 0; index < ra->size; index++)
-        if (ra->array[index] == target) return true;
-
-    return false;
-}
-
+#include "./linearSearch.h"
 
 int main() {
     size_t size = 5;
