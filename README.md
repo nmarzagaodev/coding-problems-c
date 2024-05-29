@@ -1,79 +1,36 @@
-# Classic Programming Problems and Algorithms in C
+List of Coding Tasks and Problems in C
 
-Welcome to the "coding-problems-c" Git repo! Here's a collection of classic programming problems, tasks, data structures, algorithms, and more, implemented in the C programming language.
+1. FizzBuzz: Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
 
-## Sorting Algorithms
-- Bubble Sort
-- Selection Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
-- Heap Sort
-- Counting Sort
-- Radix Sort
+2. Palindrome Checker: Create a program that checks if a given string is a palindrome (reads the same forwards and backwards).
 
-## Searching Algorithms
-- Linear Search
-- Binary Search
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS)
+3. Prime Number Generator: Write a program to generate all prime numbers up to a given number N.
 
-## Data Structures
-- Linked List
-- Stack
-- Queue
-- Binary Tree
-- Binary Search Tree (BST)
-- Heap (Min-Heap, Max-Heap)
-- Hash Table
-- Graph (Adjacency Matrix, Adjacency List)
-- Trie
-- Priority Queue
+4. Linked List Implementation: Implement a singly linked list data structure in C with basic operations like insertion, deletion, and traversal.
 
-## Dynamic Programming Problems
-- Fibonacci Series
-- Longest Common Subsequence
-- Knapsack Problem
-- Matrix Chain Multiplication
-- Coin Change Problem
+5. Binary Search Tree: Implement a binary search tree data structure in C and perform basic operations like insertion, deletion, and search.
 
-## String Manipulation
-- Reversing a String
-- String Permutations
-- Longest Palindromic Substring
-- Anagrams Detection
-- String Compression
+6. Sorting Algorithms: Implement sorting algorithms such as Bubble Sort, Insertion Sort, Selection Sort, Quick Sort, and Merge Sort. Compare their efficiencies on different datasets.
 
-## Mathematical Problems
-- Prime Number Generation
-- Factorial Calculation
-- Fibonacci Sequence
-- Greatest Common Divisor (GCD)
-- Sieve of Eratosthenes
+7. Matrix Operations: Write functions to perform basic matrix operations like addition, subtraction, multiplication, and transpose.
 
-## Graph Algorithms
-- Dijkstra's Algorithm
-- Bellman-Ford Algorithm
-- Floyd-Warshall Algorithm
-- Topological Sorting
-- Minimum Spanning Tree (Prim's Algorithm, Kruskal's Algorithm)
+8. Stack Implementation: Implement a stack data structure in C and perform operations like push, pop, and peek.
 
-## Bit Manipulation
-- Bitwise Operations
-- Counting Set Bits
-- Finding the Single Number
+9. Queue Implementation: Implement a queue data structure in C using arrays or linked lists and perform operations like enqueue and dequeue.
 
-## Miscellaneous Problems
-- Tower of Hanoi
-- Eight Queens Problem
-- Josephus Problem
-- Subset Sum Problem
-- Rat in a Maze
+10. Binary Search: Write a C program to perform a binary search on a sorted array.
 
-## Operating System Concepts
-- Producer-Consumer Problem
-- Dining Philosophers Problem
-- Readers-Writers Problem
-- Sleeping Barber Problem
+11. String Manipulation: Implement functions to perform common string manipulation tasks such as string concatenation, substring extraction, and string reversal.
 
-These classic problems and algorithms cover a broad range of topics and are excellent for practicing programming skills and understanding fundamental concepts.
+12. Graph Representation: Implement graph data structures (e.g., adjacency matrix, adjacency list) and basic graph algorithms like breadth-first search (BFS) and depth-first search (DFS).
+
+13. File Handling: Write a program that reads data from a text file, manipulates it (e.g., sorting, filtering), and writes the result to another file.
+
+14. Dynamic Memory Allocation: Practice dynamic memory allocation in C by implementing data structures like dynamic arrays or dynamic linked lists.
+
+15. Bit Manipulation: Write programs to perform bitwise operations such as bitwise AND, OR, XOR, left shift, and right shift.
+
+16. Heap Structure: Implement a binary heap data structure in C and perform basic operations like insertion, deletion (both min and max heap), and heapify.
+
+17. Hash Table: Implement a hash table data structure in C with collision resolution techniques like chaining or open addressing. Include operations like insertion, deletion, and search.
+

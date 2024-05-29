@@ -17,6 +17,8 @@ int main() {
             printf("5 is in Array\n");
         if (linearSearch(randomArray, 9)) 
             printf("9 is in Array\n");
+
+        freeRandomArray_Int(randomArray);
         
     } else {
         printf("Failed to create random array.\n");
