@@ -1,30 +1,15 @@
-// Writing FizzBuzz without any header files!
-
-void print(const char* string, unsigned int length);
-unsigned int my_strlen(const char* string);
+#include <stdio.h>
 
 int main(void) {
-    print("Hello World!\n", my_strlen("Hello World!\n"));
+    for (int i = 0; i != 100; i++) {
+        (i % 3 == 0) && (i % 5 == 0) ? 
+            printf("FizzBuzz\n") :
+        i % 3 == 0 ? 
+            printf("Fizz\n") :
+        i % 5 == 0 ? 
+            printf("Buzz\n") :
+        
+        printf("%d\n", i);
+    }
     return 0;
-}
-
-void print(const char* string, unsigned int length) {
-    asm (
-        "mov $1, %%rax\n"
-        "mov $1, %%edi\n"
-        "movq %[string], %%rsi\n"
-        "mov %[length], %%edx\n"
-        "syscall\n"
-        :
-        : [string] "r" (string), [length] "r" (length)
-        : "%rax", "%edi", "%rsi", "%edx"
-    );
-}
-
-unsigned int my_strlen(const char* string) {
-    unsigned int counter = 0;
-    for (int i = 0; string[i]; i++)
-        counter += 1;
-    
-    return counter;
 }

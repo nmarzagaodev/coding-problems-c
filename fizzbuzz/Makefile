@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -nostdinc
+CFLAGS = -Wall
 TARGET = fizzbuzz
 SRC = fizzbuzz.c
 
