@@ -1,19 +1,30 @@
-// Writing fizz buzz without any header files!
+// Writing FizzBuzz without any header files!
+
+void print(const char* string, unsigned int length);
+unsigned int my_strlen(const char* string);
 
 int main(void) {
-    char msg[] = "Hello World!\n";
-    int len = 13;
+    print("Hello World!\n", my_strlen("Hello World!\n"));
+    return 0;
+}
 
+void print(const char* string, unsigned int length) {
     asm (
-        "mov $1, %%rax\n"       // syscall number for write
-        "mov $1, %%edi\n"       // file descriptor for stdout
-        "movq %[msg], %%rsi\n"  // pointer to message
-        "mov %[len], %%edx\n"   // length of message
-        "syscall\n"             // invoke syscall
+        "mov $1, %%rax\n"
+        "mov $1, %%edi\n"
+        "movq %[string], %%rsi\n"
+        "mov %[length], %%edx\n"
+        "syscall\n"
         :
-        : [msg] "r" (msg), [len] "r" (len)
+        : [string] "r" (string), [length] "r" (length)
         : "%rax", "%edi", "%rsi", "%edx"
     );
+}
 
-    return 0;
+unsigned int my_strlen(const char* string) {
+    unsigned int counter = 0;
+    for (int i = 0; string[i]; i++)
+        counter += 1;
+    
+    return counter;
 }
