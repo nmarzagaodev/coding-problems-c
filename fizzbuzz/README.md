@@ -1,0 +1,1 @@
+Prompt: https://wiki.c2.com/?FizzBuzzTest
